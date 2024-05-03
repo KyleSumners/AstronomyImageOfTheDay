@@ -15,3 +15,7 @@ image_url = content["url"]
 image = requests.get(image_url)
 with open("image.png", "wb") as file:
     file.write(image.content)
+
+st.title(title)
+st.image("image.png")
+st.write(description)
